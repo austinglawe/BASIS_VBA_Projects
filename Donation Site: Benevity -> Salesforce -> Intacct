@@ -1,0 +1,32 @@
+_______________________________________________________________________________________________________________________________________________________________
+Overview of the purposed process for the entry of Benevity donations into our Salesforce and Intacct (Accounting) systems.
+------------------------------
+Fundraising Side (Salesforce):
+------------------------------
+Step 1. Go into the macro file.
+Step 2. Select the 'SF Benevity Macro' from the macro file and start it.
+Step 3. Go to the donation website.
+Step 4. From the donation site, take the data in the table with **'Disbursement ID' and 'Disbursement Date'**, and put that information
+        in the 'first step' page of the macro.
+Step 5. While logged in, also download the reports for the month.
+Step 6. Repeat steps 4 and 5 for the 5 different logins.
+Step 7. Put all of the downloaded reports into 1 folder.
+Step 8. Rename the folder to include 'Benevity' within the name.
+Step 9. Click the button to start step 2 of the macro.
+Step 10. A file dialog - folder picker will appear. Select the 'Benevity' folder.
+Step 11. The macro will run, going through each file in the folder, consolidating the data into an excel file.
+         The macro will then transform the data into a 'Salesforce Import File'.
+         The macro will pull in the table data to be used for the Accounting Team, to transform the reports into a format that includes all the necessary information.
+         The macro will rename all of the files based on: School, Disbursement Date, Disbursement ID, and Net Amount.
+Step 12. Import the Salesforce file into Salesforce.
+Step 13. Upload the renamed reports into our shared company folder to allow the accounting team to have access to the reports.
+------------------------------
+Accounting Side (Intacct):
+------------------------------
+
+
+
+
+
+
+
