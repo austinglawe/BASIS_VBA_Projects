@@ -15,12 +15,14 @@ Step 8. Rename the folder to include 'Benevity' within the name.
 Step 9. Click the button to start step 2 of the macro.
 Step 10. A file dialog - folder picker will appear. Select the 'Benevity' folder.
 Step 11. The macro will do all of the following, going through each file one by one within the given folder:
-         1. Consolidate the data into the macro file.
-         The macro will then transform the data into a 'Salesforce Import File'.
-         The macro will pull in the table data to be used for the Accounting Team, to transform the reports into a format that includes all the necessary information.
-         The macro will rename all of the files based on: School, Disbursement Date, Disbursement ID, and Net Amount.
-Step 12. Import the Salesforce file into Salesforce.
-Step 13. Upload the renamed reports into our shared company folder to allow the accounting team to have access to the reports.
+         1. Consolidate all of the report data into the macro file.
+         2. Transform the report by adding in the table details from the 'Benevity' website - for the accounting team's side of the process.
+         3. Rename all of the files based on: School, Disbursement Date, Disbursement ID, and Net Amount.
+         4. Break apart line items based on Company Matching or Employee Giving (2 transactions may be on 1 line item on the report)
+         5. Transform the data into a 'Salesforce Import File'.
+Step 12. Review the data for the Salesforce import file and make any necessary changes based on donors' notes and conditional formatting, flagging specific transaction types.
+Step 13. Import the Salesforce file into Salesforce.
+Step 14. Upload the renamed reports into our shared company folder to allow the accounting team to have access to the reports.
 ------------------------------
 Accounting Side (Intacct):
 ------------------------------
