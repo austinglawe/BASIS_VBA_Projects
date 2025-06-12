@@ -1,14 +1,61 @@
 ''''' #1 Ask user for a file '''''
-	' Variables required
-		Dim fd As FileDialog
-	
-	' Set the 'fd' variable to the File Dialog type
-		Set fd = Application.FileDialogFilePicker
 
-	' Ask user to select a file
-		With fd
-			If fd <> -1 Then
-				MsgBox "No file selected. Please locate the file and try again."
-			End if
-		End with
+' Variables required
+Dim fd As FileDialog
+Dim FilePath As String
+
+' Set the 'fd' variable to the File Dialog type
+Set fd = Application.FileDialog(msoFileDialogFilePicker)
+
+' Ask user to select a file
+With fd
+    .Title = "Select a File"
+    .AllowMultiSelect = False ' Set to True if you want to allow multiple files
+    If .Show <> -1 Then
+        MsgBox "No file selected. Please locate the file and try again.", vbExclamation
+        Exit Sub
+    End If
+    FilePath = .SelectedItems(1)
+End With
+
+
+
+''''' #2 Ask user for a folder '''''
+
+' Variables required
+Dim fd As FileDialog
+Dim FolderPath As String
+
+' Set the 'fd' variable to the File Dialog type
+Set fd = Application.FileDialog(msoFileDialogFolderPicker)
+
+' Ask user to select a folder
+With fd
+    .Title = "Select a Folder"
+    .AllowMultiSelect = False
+    If .Show <> -1 Then
+        MsgBox "No folder selected. Please locate the folder and try again.", vbExclamation
+        Exit Sub
+    End If
+    FolderPath = .SelectedItems(1)
+End With
+
+
+
+''''' #3 - Create a new worksheet '''''
+
+
+''''' #4 - Find the Last Row '''''
+
+''''' # - '''''
+
+''''' # - '''''
+
+''''' # - '''''
+
+''''' # - '''''
+
+''''' # - '''''
+
+
 
