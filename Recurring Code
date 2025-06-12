@@ -1,0 +1,14 @@
+''''' #1 Ask user for a file '''''
+	' Variables required
+		Dim fd As FileDialog
+	
+	' Set the 'fd' variable to the File Dialog type
+		Set fd = Application.FileDialogFilePicker
+
+	' Ask user to select a file
+		With fd
+			If fd <> -1 Then
+				MsgBox "No file selected. Please locate the file and try again."
+			End if
+		End with
+
