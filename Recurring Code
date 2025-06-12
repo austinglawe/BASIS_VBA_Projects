@@ -42,10 +42,21 @@ End With
 
 
 
-''''' #3 - Create a new worksheet '''''
+''''' #3 - Create a new worksheet and rename it '''''
+Dim wsTest As Worksheet
 
+Set wsTest = ThisWorkbook.Worksheets.Add(After:=ThisWorkbook.Worksheets(ThisWorkbook.Worksheets.Count))
+
+	' Rename the worksheet
+		wsTest.Name = "Test"
 
 ''''' #4 - Find the Last Row '''''
+
+Dim wsTest As Worksheet
+Dim LastRow As Long
+
+Set wsTest = ThisWorkbook.ActiveSheet
+LastRow = wsTest.Cells(wsTest.Rows.Count, "A").End(xlUp).Row
 
 ''''' # - '''''
 
